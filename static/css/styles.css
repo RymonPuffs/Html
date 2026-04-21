@@ -1,0 +1,42 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background-color: rgb(229, 35, 255);
+}
+
+.contenedor {
+    width: 180px;
+    /* 1.-top, bottom 2.-right, left */
+    margin: 70px auto;
+/*padding del borde hacia dentro*/
+/* como es un solo valor se aplica en el top */
+    padding: 20px;
+    background-color: rgb(0, 0, 255);
+}
+
+h1 {
+    color: rgb(60, 255, 21);
+    text-align: center;
+}
+
+
+
+input {
+    width: 100%;
+    margin-top: auto;
+    font-family: Papyrus, sans-serif;
+}
+
+.boton-formulario {
+    width: 100%;
+    background-color: rgb(255, 30, 30);
+    color: rgb(252, 248, 14);
+    padding: 10px;
+    margin-top: 7px;
+    border: none;
+    font-family: Papyrus, sans-serif;
+}
+
+.label{
+    color: rgb(255, 255, 255);
+    font-family: Papyrus, sans-serif;
+    font-size: 20px;}
