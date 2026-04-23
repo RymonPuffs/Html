@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora Web</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+    <body>
+        <div class="contenedor">
+            <form action="{{ url_for('calcular') }}" method="post">
+
+                <h1 class="h1">Calculadora Web</h1>
+
+                {% if error %}
+                    <p class="error">{{ error }}</p>
+                {% endif %}
+
+                <label class="label">Ingresa un primer valor</label>
+                <input type="number" name="primer_valor" step="any" value="{{ request.form.primer_valor or '' }}">
+
+                <label class="label">Ingresa un segundo valor</label>
+                <input type="number" name="segundo_valor" step="any" value="{{ request.form.segundo_valor or '' }}">
+
+                <button type="submit" class="boton-formulario">Enviar</button>
+            </form>
+
+            {% if resultado is not none %}
+                <p>El resultado es: {{ resultado }}</p>
+            {% endif %}
+
+        </div>
+    </body>
+    <script type="text/javascript" src="https://contador.websiteout.com/js/24/15/999/0"></script>
+</html>
